@@ -1,0 +1,279 @@
+﻿/* ---reset.css--- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ---reset.css--- */
+
+html { font-family: "微軟正黑體", Arial; font-size:16px; -webkit-text-size-adjust:none;}
+
+* { -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */}
+	
+* a:link, * a:visited { text-decoration:none;}
+* a:hover, * a:active { text-decoration:none;}
+.clear { clear:both;}
+@font-face { font-family: GOTHIC; src: url(../fonts/GOTHIC.TTF);}
+
+/* --電腦版型------------------------------------- */
+body { margin-bottom:0; background:url(../images/homeBG.jpg) no-repeat center top;}
+h4,
+#SUBMENU { display:none;}
+
+a.top { position:fixed; bottom:20px; right:20px; display:block; z-index:9999;}
+
+/* -- 單元標題圖檔 -- */
+img.item { display:block; position:absolute; top:-39px; left:0;}
+
+/* -- 內容區 -- */
+.mainCon { width:90%; max-width:1250px; margin: 0 auto; position:relative; padding: 0;}
+
+/* -- 主選項 -- */
+header { width:100%; text-align:center; margin: 45px auto 0 auto; font-size:12px;}
+header a { color:#c7d3e3; display:inline-block; margin: 0 5px; text-align:left; background:url(../images/navBG.png) no-repeat left center; padding: 0 0 0 30px;}
+header a:hover { color:#fff;}
+header a b { font-size:16px; display:block; margin-bottom:3px;}
+
+/* -- 首頁 -- */
+#home { width:100%; overflow: hidden;}
+#home img.title1 { display:block; width:auto; margin: 135px auto 0 auto;}
+#home img.title2 { display:block; width:auto; margin: 170px auto 129px auto;}
+
+/* -- IT生態圈 -- */
+#it { width:100%; background: url(../images/itBG.jpg) no-repeat center top #e3e3e3;}
+.itInfo { color:#000; padding: 90px 0 120px 0; display:block; vertical-align:top; text-align:left;}
+.itInfo img { display:block; margin: 0 auto 50px auto;}
+
+ul.itTxt { width:90%; margin: 0 auto; text-align:center;}
+ul.itTxt li { width:29%; font-size:16px; line-height:30px; text-align: justify; display:inline-block; vertical-align:top; color:#393939; margin: 0 2%;}
+ul.itTxt li b { font-size:30px; font-weight:bold; display:block; margin: 0 0 15px 0; color:#1c76ae;}
+.gray { color: #cecece;}
+ul.itTxt li:nth-child(1) {animation-delay: .6s;}
+ul.itTxt li:nth-child(2) {animation-delay: 1s;}
+ul.itTxt li:nth-child(3) {animation-delay: 1.4s;}
+
+/* -- 關於 -- */
+#about { width:100%; background: url(../images/aboutBG.jpg) no-repeat center top; min-height:580px; padding-bottom:50px;}
+.aboutInfo { padding: 125px 0 30px 230px; animation-delay: .6s;}
+.your-class { font-size:18px; color:#fff; line-height:36px; text-align:justify;}
+.aboutTxt { padding: 0 5%; vertical-align:top;}
+.aboutTitle img {float: right; height:200px; border:#5d7fa4 1px solid; vertical-align:top;}
+.aboutTitle { margin-bottom:30px; width:100%; display:block;}
+.aboutTitle b { font-size:36px; display:inline-block; vertical-align: text-bottom; font-weight:bold; color:#d3d5d8; padding-top:150px;}
+.en { font-size:22px; color:#a6b2c4; font-weight:normal; display:inline-block; margin: 0 0 0 10px;}
+
+/* -- 專業服務 -- */
+#service { width:100%; background: url(../images/serviceBG.gif) no-repeat center center;}
+.serviceInfo { padding: 125px 0 30px 210px;; animation-delay: .6s;}
+.abgne_tab { margin: 0 auto; display:block; width:80%; text-align:center;}
+.abgne_tab ul.tabs { width:100%; text-align:center;}
+.abgne_tab ul.tabs li { margin: 0 10px; font-size:20px; display:inline-block; font-weight:bold; cursor:pointer; margin-bottom:30px; border:none; width:25%; margin: 0; vertical-align:top; height:73px;}
+.abgne_tab ul.tabs li b {  border:#9bb0c9 1px solid; color:#9bb0c9; padding: 20px 15%; width:100%;}
+.abgne_tab ul.tabs li.active { background:url(../images/bookmarkBG.png) no-repeat center bottom; height:73px;}
+.abgne_tab ul.tabs li.active b { color:#f7cd71; border:#f7cd71 1px solid; padding: 20px 15%;}
+
+div.tab_container { width: 100%; margin: 25px auto 0 auto; position:relative;}
+div.tab_container .tab_content { padding: 0 0 60px 0; min-height:300px; font-size:18px; color:#fff; line-height:36px; text-align:justify;}
+div.tab_container .tab_content b { font-size:22px; color:#fff; display: table; margin: 0 auto 40px auto; border-bottom:#CCC 2px solid; padding-bottom:10px;}
+
+img.service { display:inline-block; float:right; width:35%; margin: 0 0 20px 40px; padding: 0 0 0 40px; border-left:#5d7fa4 1px solid; border-right: #efc770 3px solid;}
+img.logo { float:left; margin: 22px 1%; width:23%; padding: 0 25px 0 0;}
+
+/* -- 聯絡我們 -- */
+#contact { width:100%; padding-bottom:50px; background: #333;}
+ul.contactInfo { font-size:28px; font-weight:bold; color:#fff; padding: 65px 0 0 230px; margin: 0 1% 0 0; vertical-align:top; text-align:left; position:relative; overflow: hidden;}
+ul.contactInfo li { width:48%; margin: 0 2% 45px 0; display:inline-block; float:left; padding: 0 0 0 55px;}
+ul.contactInfo li b { font-size:20px; display:block; color:#efc770; padding: 0 0 0 0; margin: 0 0 8px 0;}
+ul.contactInfo li:nth-child(2) {animation-delay: .6s;}
+ul.contactInfo li:nth-child(3) {animation-delay: 1.2s;}
+ul.contactInfo li:nth-child(4) {animation-delay: 1.8s;}
+.address { background:url(../images/icon_map.png) no-repeat left top;}
+.phone { background:url(../images/icon_phone.png) no-repeat left top;}
+.fax { background:url(../images/icon_fax.png) no-repeat left top;}
+.mail { background:url(../images/icon_mail.png) no-repeat left top;}
+
+footer { background: #e1b251; text-align:center; padding: 30px 0 40px 0; font-size:13px; color:#333; margin-top:0; line-height:20px;}
+footer img { display:block; margin: 0 auto 15px auto;}
+
+/* --窄螢幕版型------------------------------------- */
+@media screen and (min-width: 1024px) and (max-width: 1249px) {
+
+/* -- 單元標題圖檔 -- */
+img.item { display:block; position:absolute; top:-34px; left:0; width:140px;}
+
+/* -- 關於 -- */
+#about { width:100%; background: url(../images/aboutBG.jpg) no-repeat center top; min-height:580px; padding-bottom:50px;}
+.aboutInfo { padding: 110px 0 30px 0px;}
+.your-class { font-size:18px; color:#fff; line-height:36px; text-align:justify;}
+
+/* -- 專業服務 -- */
+.serviceInfo { padding: 125px 0 30px 180px;}
+img.service { display:inline-block; float:right; width:40%; margin: 0 0 20px 40px; padding: 0 0 0 40px; border-left:#5d7fa4 1px solid; border-right: #efc770 3px solid;}
+
+/* -- 聯絡我們 -- */
+#contact { width:100%; padding-bottom:50px; background: #333;}
+ul.contactInfo { font-size:24px; font-weight:bold; color:#fff; padding: 65px 0 0 2170px; margin: 0 0 0 0; vertical-align:top; text-align:left; position:relative;}
+ul.contactInfo li { width:49%; margin: 0 1% 45px 0; display:inline-block; float:left; padding: 0 0 0 55px;}
+ul.contactInfo li b { font-size:18px; display:block; color:#efc770; padding: 0 0 0 0; margin: 0 0 8px 0;}
+
+}
+
+/* --平板版型------------------------------------- */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+body { margin-bottom:0; background:url(../images/homeBG-M.jpg) no-repeat center top; background-size:1800px auto;}
+
+/* -- 單元標題圖檔 -- */
+img.item { display:block; position:absolute; top:-33px; left:0; width:140px;}
+
+/* -- 首頁 -- */
+#home { width:100%;}
+#home img.title1 { display:block; width:auto; margin: 160px auto 0 auto;}
+#home img.title2 { display:block; width:auto; margin: 234px auto 89px auto;}
+
+/* -- IT生態圈 -- */
+#it { width:100%; background: url(../images/itBG.jpg) no-repeat center top #e3e3e3; background-size:1800px auto;}
+.itInfo img { display:block; margin: 0 auto 50px auto; width:80%;}
+
+ul.itTxt { width:100%; margin: 0 auto; text-align:center;}
+ul.itTxt li { width:80%; font-size:16px; line-height:30px; text-align: justify; display:block; vertical-align:top; color:#393939; margin: 0 auto 30px auto;}
+ul.itTxt li b { font-size:30px; font-weight:bold; display:block; margin: 0 auto 15px auto; color:#1c76ae;}
+.gray { color: #cecece;}
+
+/* -- 關於 -- */
+#about { width:100%; background: url(../images/aboutBG.jpg) no-repeat -550px top; min-height:580px; padding-bottom:50px;}
+.aboutInfo { padding: 160px 0 30px 0; width:90%; margin: 0 auto;}
+.your-class { font-size:18px; color:#fff; line-height:36px; text-align:justify;}
+
+.aboutTitle img {float: right; height:180px; border:#5d7fa4 1px solid; vertical-align:top;}
+.aboutTitle { margin-bottom:30px; width:100%; display:block;}
+.aboutTitle b { font-size:32px; display:inline-block; vertical-align: text-bottom; font-weight:bold; color:#d3d5d8; padding-top:150px;}
+.en { font-size:18px; color:#a6b2c4; font-weight:normal; display:inline-block; margin: 0 0 0 10px;}
+
+/* -- 專業服務 -- */
+.serviceInfo { padding: 160px 0 70px 0px;}
+img.service { display:inline-block; float:right; width:45%; margin: 0 0 20px 40px; padding: 0 0 0 40px; border-left:#5d7fa4 1px solid; border-right: #efc770 3px solid;}
+img.logo { float:left; margin: 0 1% 45px 1%; width:31%; padding: 0 25px 0 0;}
+
+/* -- 聯絡我們 -- */
+#contact { width:100%; padding-bottom:50px; background: #333;}
+ul.contactInfo { font-size:30px; font-weight:bold; color:#fff; padding: 90px 0 0 180px; margin: 0 0 0 0; vertical-align:top; text-align:left; position:relative;}
+ul.contactInfo li { width:100%; margin: 0 0 45px 0; display:block; float:none; padding: 0 0 0 55px;}
+ul.contactInfo li b { font-size:20px; display:block; color:#efc770; padding: 0 0 0 0; margin: 0 0 8px 0;}
+
+}
+
+/* --手機版型------------------------------------- */
+
+@media screen and (max-width: 767px) {
+
+body { margin-bottom:0; background:url(../images/homeBG-M2.jpg) no-repeat center top; background-size:767px auto;}
+
+a.top { position:fixed; bottom:10px; right:10px; display:block; z-index:9999;}
+a.top img { width:45px;}
+
+h4 { width:60px; height:45px; background: url(../images/menuM.png) no-repeat center center; background-size:60px 45px; position: fixed; top:10px; right:10px; display:block; z-index:999999;}
+h4:hover { display:block; width:60px; height:45px; background: url(../images/menuM.png) no-repeat center center; background-size:60px 45px; cursor: pointer;}
+
+#SUBMENU { width:100%; height:100%; padding:0; margin:0; position: fixed; top:0; left:0; display:none; z-index:99998; background: rgba(4,76,147,.9);}
+#SUBMENU ul { padding: 0; margin: 30% auto 0 auto; width:90%; text-align:center;}
+#SUBMENU ul li { width:100%; display:block; padding:15px 0; border-top:#efc770 1px solid; border-bottom:#efc770 1px solid;}
+#SUBMENU ul li a { width:100%; display:block; padding:10px 0; color:#c7d3e3; font-size:11px;}
+#SUBMENU ul li a:hover { color:#fff;}
+#SUBMENU ul li b { font-size:24px; display:block; margin: 0 0 5px 0; font-weight:bold;}
+#SUBMENU ul li a:hover b { color:#fff;}
+
+header { display:none;}
+
+/* -- 單元標題圖檔 -- */
+img.item { display:block; position:absolute; top:-24px; left:5%; width:100px;}
+
+/* -- 首頁 -- */
+#home { width:100%;}
+#home img.title1 { display:block; width:auto; margin: 180px auto 0 auto; width:85%;}
+#home img.title2 { display:block; width:auto; margin: 60px auto 179px auto; width:65%;}
+
+/* -- IT生態圈 -- */
+#it { width:100%; background: url(../images/itBG.jpg) no-repeat center top #e3e3e3; background-size:1000px auto;}
+.itInfo img { display:block; margin: 0 auto 50px auto; width:100%;}
+.itInfo { color:#000; padding: 90px 0 50px 0; display:block; vertical-align:top; text-align:left;}
+ul.itTxt { width:100%; margin: 0 auto; text-align:center;}
+ul.itTxt li { width:90%; font-size:15px; line-height:26px; text-align: justify; display:block; vertical-align:top; color:#393939; margin: 0 auto 30px auto;}
+ul.itTxt li b { font-size:24px; font-weight:bold; display:block; margin: 0 auto 15px auto; color:#1c76ae;}
+.gray { color: #cecece;}
+
+/* -- 關於 -- */
+#about { width:100%; background: url(../images/aboutBG.jpg) no-repeat center top #203a53; min-height: none; padding-bottom:50px; background-size:1800px auto;}
+.aboutInfo { padding: 100px 0 30px 0; width:100%; margin: 0 auto;}
+.your-class { font-size:15px; color:#fff; line-height:26px; text-align:justify;}
+
+.aboutTitle img {float: none; width:100%; height:auto; border:#5d7fa4 1px solid; vertical-align:top; margin-top:20px;}
+.aboutTitle { margin-bottom:30px; width:100%; display:block;}
+.aboutTitle b { font-size:30px; display:inline-block; vertical-align: text-bottom; font-weight:bold; color:#d3d5d8; padding-top:70px;}
+.en { font-size:18px; color:#a6b2c4; font-weight:normal; display:inline-block; margin: 0 0 0 10px;}
+
+/* -- 專業服務 -- */
+.serviceInfo { padding: 120px 0 70px 0;}
+
+.abgne_tab { margin: 0 auto; display:block; width:100%; text-align:center;}
+.abgne_tab ul.tabs { width:100%; text-align:center;}
+.abgne_tab ul.tabs li { font-size:13px; display:inline-block; font-weight:bold; cursor:pointer; margin-bottom:30px; border:none; width:25%; margin: 0; vertical-align:top; height:61px;}
+.abgne_tab ul.tabs li b {  border:#9bb0c9 1px solid; color:#9bb0c9; padding: 15px 5%; width:100%;}
+.abgne_tab ul.tabs li.active { background:url(../images/bookmarkBG.png) no-repeat center bottom; height:61px;}
+.abgne_tab ul.tabs li.active b { color:#f7cd71; border:#f7cd71 1px solid; padding: 15px 5%;}
+
+div.tab_container { width: 100%; margin: 10px auto 0 auto; position:relative;}
+div.tab_container .tab_content { padding: 0; min-height:360px; font-size:15px; color:#fff; line-height:26px; text-align:justify;}
+
+img.service { display:block; float:none; width:100%; margin: 0 0 20px 0; padding: 0 0 0 0; border-left:none; border-top: #efc770 3px solid; border-right:none;}
+img.logo { float:left; margin: 0 2% 45px 2%; width:46%; padding: 0 25px 0 0;}
+.logoZone { margin: -50px 0 0 0; padding-top:100px;}
+
+/* -- 聯絡我們 -- */
+#contact { width:100%; padding-bottom:50px; background: #333;}
+ul.contactInfo { font-size:22px; line-height:30px; font-weight:bold; color:#fff; padding: 130px 0 0 0; margin: 0 0 0 0; vertical-align:top; text-align:left; position:relative;}
+ul.contactInfo li { width:90%; margin: 0 auto 25px auto; display:block; float:none; padding: 0 0 0 55px;}
+ul.contactInfo li b { font-size:15px; display:block; color:#efc770; padding: 0 0 0 0; margin: 0 0 0 0;}
+
+footer img { display:block; margin: 0 auto 15px auto; width:80%;}
+}
+
+.hide {opacity: 0;}
